@@ -340,13 +340,14 @@ class AdvancedVocalToHummingConverter:
                         score = self.calculate_score(metrics)
 
                         if score > best_score:
+                            improvement = score - best_score
                             best_score = score
                             best_params = test_params
                             best_audio = y_test
                             improved = True
 
                             if verbose:
-                                print(f"[Iteration {iteration + 1:2d}] Score: {score:.4f} (+{score - (score - (score - best_score)):.4f}) | {param_name}={value}")
+                                print(f"[Iteration {iteration + 1:2d}] Score: {score:.4f} (+{improvement:.4f}) | {param_name}={value}")
 
                     except Exception as e:
                         continue
