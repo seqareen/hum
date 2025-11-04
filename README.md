@@ -14,7 +14,7 @@ Automatically converts vocal recordings (with words) into pure therapeutic hummi
 
 ```bash
 # Install dependencies
-pip install --break-system-packages -r requirements.txt
+pip install -e .
 
 # Basic usage
 python vocal_to_humming.py your_vocal.wav output_humming.wav
@@ -48,7 +48,7 @@ Final Metrics:
 ## Why This Works
 
 Based on research showing:
-- 130 Hz optimizes nitric oxide production (15-20× increase)
+- 130 Hz optimizes nitric oxide production (15-20ï¿½ increase)
 - Removes cognitive load for deeper meditation
 - Follows scientifically validated protocols
 
