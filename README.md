@@ -10,10 +10,18 @@ Automatically converts vocal recordings (with words) into pure therapeutic hummi
  **Targets 130 Hz** (scientifically validated frequency)
  **Two versions**: Basic and Advanced
 
+## Prerequisites
+
+- Python 3.13 (required - no pre-built wheels for 3.14 yet)
+- [uv](https://github.com/astral-sh/uv) (recommended) or pip
+
 ## Quick Start
 
 ```bash
-# Install dependencies
+# Install dependencies with uv (recommended - fastest)
+uv sync
+
+# Or with pip
 pip install -e .
 
 # Basic usage
